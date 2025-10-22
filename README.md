@@ -21,7 +21,7 @@ Proyek ini dibuat menggunakan **QGIS** dan diekspor ke format web menggunakan **
 ---
 
 ### 🧭 Tujuan
-Mendukung upaya **pengawasan perizinan pengusahaan air tanah** secara efektif, cepat, dan transparan melalui peta digital yang mudah diakses publik.
+Mendukung upaya **pengawasan perizinan air tanah** secara efektif, cepat, dan transparan melalui peta digital yang mudah diakses publik.
 
 ---
 
