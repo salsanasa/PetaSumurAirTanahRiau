@@ -4,108 +4,134 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Peta Digital Sumur Air Tanah Provinsi Riau</title>
+  <link rel="icon" href="peta/images/marker-icon.png">
   <style>
     body {
-      font-family: "Segoe UI", sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       background: #f8fafc;
-      color: #1e293b;
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem 2rem;
+      color: #222;
+      margin: 0;
+      padding: 0;
       line-height: 1.6;
     }
-    h1, h2, h3 {
-      color: #0f172a;
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
     }
-    a {
-      color: #2563eb;
-      text-decoration: none;
+    h1 {
+      font-size: 2rem;
+      color: #004c99;
+      margin-bottom: 10px;
     }
-    a:hover {
-      text-decoration: underline;
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
     .center {
       text-align: center;
     }
-    .button {
-      display: inline-block;
-      background: #16a34a;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin-top: 10px;
-      font-weight: bold;
-    }
-    .button:hover {
-      background: #15803d;
-    }
     img {
-      border-radius: 12px;
       max-width: 100%;
+      border-radius: 10px;
+      margin: 10px 0 20px;
+    }
+    a.button {
+      display: inline-block;
+      background: #0078d7;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+    a.button:hover {
+      background: #005fa3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background: #e8f0fe;
     }
     footer {
       text-align: center;
       font-size: 0.9em;
-      color: #64748b;
-      margin-top: 40px;
+      color: #555;
+      margin: 40px 0 20px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>🌍 Peta Digital Sumur Air Tanah Provinsi Riau</h1>
+  </header>
 
-  <h1 class="center">🌍 Peta Digital Sumur Air Tanah Provinsi Riau</h1>
+  <section>
+    <div class="center">
+      <img src="peta/thumbnail.png" alt="Tangkapan layar peta" width="600">
+      <br>
+      <a href="https://salsanasa.github.io/PetaSumurAirTanahRiau/peta/" class="button">🔗 Lihat Peta Interaktif di Sini</a>
+    </div>
 
-  <p class="center">
-    <img src="thumbnail.png" alt="Tangkapan layar peta">
-  </p>
+    <h2>📖 Deskripsi</h2>
+    <p>
+      Peta digital ini menampilkan sebaran <strong>sumur air tanah di Provinsi Riau</strong>, 
+      diklasifikasikan berdasarkan status perizinannya:
+    </p>
+    <ul>
+      <li>🟢 <strong>Berizin</strong></li>
+      <li>🟡 <strong>Izin Kedaluwarsa</strong></li>
+      <li>🔴 <strong>Tidak Berizin</strong></li>
+    </ul>
 
-  <p class="center">
-    <a href="https://salsanasa.github.io/PetaSumurAirTanahRiau/map/" class="button">🔗 Lihat Peta Interaktif</a>
-  </p>
+    <p>
+      Proyek ini dibuat menggunakan <strong>QGIS</strong> dan diekspor ke format web menggunakan 
+      <strong>qgis2web (Leaflet)</strong>, lalu dipublikasikan melalui <strong>GitHub Pages</strong>.
+    </p>
 
-  <hr>
+    <h2>🧭 Tujuan</h2>
+    <p>
+      Mendukung upaya <strong>pengawasan perizinan pengusahaan air tanah</strong> secara efektif, 
+      cepat, dan transparan melalui peta digital yang mudah diakses publik.
+    </p>
 
-  <h2>📖 Deskripsi</h2>
-  <p>
-    Peta digital ini menampilkan sebaran <b>sumur air tanah di Provinsi Riau</b>,
-    diklasifikasikan berdasarkan status perizinannya:
-  </p>
-  <ul>
-    <li>🟢 <b>Berizin</b></li>
-    <li>🟡 <b>Izin Kedaluwarsa</b></li>
-    <li>🔴 <b>Tidak Berizin</b></li>
-  </ul>
-  <p>
-    Proyek ini dibuat menggunakan <b>QGIS</b> dan diekspor ke format web menggunakan
-    <b>qgis2web (Leaflet)</b>, lalu dipublikasikan melalui <b>GitHub Pages</b>.
-  </p>
+    <h2>🧑‍💻 Pembuat</h2>
+    <p>
+      <strong>Salsa Nazia Putri</strong><br>
+      Penyelidik Bumi Ahli Pertama<br>
+      Bidang Geologi dan Air Tanah<br>
+      Dinas Energi dan Sumber Daya Mineral Provinsi Riau
+    </p>
 
-  <h2>🧭 Tujuan</h2>
-  <p>
-    Mendukung upaya <b>pengawasan perizinan pengusahaan air tanah</b>
-    secara efektif, cepat, dan transparan melalui peta digital yang mudah diakses publik.
-  </p>
+    <h2>⚙️ Teknologi yang Digunakan</h2>
+    <table>
+      <tr><th>Komponen</th><th>Deskripsi</th></tr>
+      <tr><td>🗺️ QGIS</td><td>Pembuatan peta dan ekspor ke format web</td></tr>
+      <tr><td>🌿 Leaflet.js</td><td>Tampilan interaktif peta</td></tr>
+      <tr><td>🧩 qgis2web</td><td>Plugin untuk konversi otomatis dari QGIS ke web</td></tr>
+      <tr><td>☁️ GitHub Pages</td><td>Hosting peta secara gratis dan publik</td></tr>
+    </table>
 
-  <h2>🧑‍💻 Pembuat</h2>
-  <p>
-    <b>Salsa Nazia Putri</b><br>
-    Penyelidik Bumi Ahli Pertama<br>
-    Bidang Geologi dan Air Tanah<br>
-    Dinas Energi dan Sumber Daya Mineral Provinsi Riau
-  </p>
-
-  <h2>⚙️ Teknologi yang Digunakan</h2>
-  <ul>
-    <li>🗺️ QGIS – Pembuatan peta dan ekspor ke format web</li>
-    <li>🌿 Leaflet.js – Tampilan interaktif peta</li>
-    <li>🧩 qgis2web – Plugin konversi otomatis dari QGIS ke web</li>
-    <li>☁️ GitHub Pages – Hosting gratis untuk publikasi peta</li>
-  </ul>
+    <div class="center">
+      <img src="https://img.shields.io/badge/Made%20with-QGIS-green?logo=qgis" alt="">
+      <img src="https://img.shields.io/badge/Powered%20by-Leaflet-blue?logo=leaflet" alt="">
+      <img src="https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-lightgrey?logo=github" alt="">
+    </div>
+  </section>
 
   <footer>
     © 2025 Salsa Nazia Putri
   </footer>
 </body>
 </html>
-
