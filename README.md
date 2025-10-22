@@ -1,11 +1,11 @@
 <h1 align="center">🌍 Peta Digital Sumur Air Tanah Provinsi Riau</h1>
 
 <p align="center">
-  <img src="thumbnail.png" alt="Tangkapan layar peta" width="600">
+  <img src="peta/thumbnail.png" alt="Tangkapan layar peta" width="600">
 </p>
 
 <p align="center">
-  <a href="https://salsanasa.github.io/PetaSumurAirTanahRiau/"><strong>🔗 Lihat Peta Interaktif di Sini »</strong></a>
+  <a href="https://salsanasa.github.io/PetaSumurAirTanahRiau/peta/"><strong>🔗 Lihat Peta Interaktif di Sini »</strong></a>
 </p>
 
 ---
@@ -26,11 +26,10 @@ Mendukung upaya **pengawasan perizinan pengusahaan air tanah** secara efektif, c
 ---
 
 ### 🧑‍💻 Pembuat
-**Salsa Nazia Putri**<br>
-Penyelidik Bumi Ahli Pertama<br>
-Bidang Geologi dan Air Tanah<br>
+**Salsa Nazia Putri**  
+Penyelidik Bumi Ahli Pertama  
+Bidang Geologi dan Air Tanah  
 Dinas Energi dan Sumber Daya Mineral Provinsi Riau
-  
 
 ---
 
