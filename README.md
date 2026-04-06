@@ -51,4 +51,4 @@ Dinas Energi dan Sumber Daya Mineral Provinsi Riau
 
 ---
 
-<p align="center">© 2025 Salsa Nazia Putri</p>
+<p align="center">© 2026 Salsa Nazia Putri</p>
