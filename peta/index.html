@@ -34,7 +34,7 @@
         <title></title>
     </head>
     <body>
-        <div id="map">
+         <div id="map">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
@@ -48,9 +48,8 @@
         <script src="js/labels.js"></script>
         <script src="js/leaflet.photon.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="js/leaflet-search.js"></script>
         <script src="data/PROVINSI_RIAU_1.js"></script>
-        <script src="data/SumurAirTanah_2.js"></script>
+        <script src="data/Untukbuatwebmapfixini_2.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -70,7 +69,7 @@
         }
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[-0.8309257651269475,98.51028022111349],[2.37974963265434,104.95586252911214]]);
+        }).fitBounds([[-0.8309032451339773,99.5242992045854],[2.37977215264731,105.8740364225023]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -393,7 +392,7 @@
         });
         bounds_group.addLayer(layer_PROVINSI_RIAU_1);
         map.addLayer(layer_PROVINSI_RIAU_1);
-        function pop_SumurAirTanah_2(feature, layer) {
+        function pop_Untukbuatwebmapfixini_2(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (var i in e.target._eventParents) {
@@ -452,11 +451,11 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_SumurAirTanah_2_0(feature) {
+        function style_Untukbuatwebmapfixini_2_0(feature) {
             switch(String(feature.properties['Status'])) {
                 case 'Berizin':
                     return {
-                pane: 'pane_SumurAirTanah_2',
+                pane: 'pane_Untukbuatwebmapfixini_2',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -466,13 +465,13 @@
                 weight: 1,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(55,206,49,1.0)',
+                fillColor: 'rgba(47,186,31,1.0)',
                 interactive: true,
             }
                     break;
                 case 'Izin Kedaluwarsa':
                     return {
-                pane: 'pane_SumurAirTanah_2',
+                pane: 'pane_Untukbuatwebmapfixini_2',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -482,13 +481,13 @@
                 weight: 1,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(246,246,41,1.0)',
+                fillColor: 'rgba(218,209,32,1.0)',
                 interactive: true,
             }
                     break;
                 case 'Tidak Berizin':
                     return {
-                pane: 'pane_SumurAirTanah_2',
+                pane: 'pane_Untukbuatwebmapfixini_2',
                 radius: 8.0,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
@@ -498,34 +497,34 @@
                 weight: 1,
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(222,22,4,1.0)',
+                fillColor: 'rgba(243,0,4,1.0)',
                 interactive: true,
             }
                     break;
             }
         }
-        map.createPane('pane_SumurAirTanah_2');
-        map.getPane('pane_SumurAirTanah_2').style.zIndex = 402;
-        map.getPane('pane_SumurAirTanah_2').style['mix-blend-mode'] = 'normal';
-        var layer_SumurAirTanah_2 = new L.geoJson(json_SumurAirTanah_2, {
+        map.createPane('pane_Untukbuatwebmapfixini_2');
+        map.getPane('pane_Untukbuatwebmapfixini_2').style.zIndex = 402;
+        map.getPane('pane_Untukbuatwebmapfixini_2').style['mix-blend-mode'] = 'normal';
+        var layer_Untukbuatwebmapfixini_2 = new L.geoJson(json_Untukbuatwebmapfixini_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_SumurAirTanah_2',
-            layerName: 'layer_SumurAirTanah_2',
-            pane: 'pane_SumurAirTanah_2',
-            onEachFeature: pop_SumurAirTanah_2,
+            dataVar: 'json_Untukbuatwebmapfixini_2',
+            layerName: 'layer_Untukbuatwebmapfixini_2',
+            pane: 'pane_Untukbuatwebmapfixini_2',
+            onEachFeature: pop_Untukbuatwebmapfixini_2,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.circleMarker(latlng, style_SumurAirTanah_2_0(feature));
+                return L.circleMarker(latlng, style_Untukbuatwebmapfixini_2_0(feature));
             },
         });
-        bounds_group.addLayer(layer_SumurAirTanah_2);
-        map.addLayer(layer_SumurAirTanah_2);
+        bounds_group.addLayer(layer_Untukbuatwebmapfixini_2);
+        map.addLayer(layer_Untukbuatwebmapfixini_2);
         var overlaysTree = [
-            {label: 'Sumur Air Tanah<br /><table><tr><td style="text-align: center;"><img src="legend/SumurAirTanah_2_Berizin0.png" /></td><td>Berizin</td></tr><tr><td style="text-align: center;"><img src="legend/SumurAirTanah_2_IzinKedaluwarsa1.png" /></td><td>Izin Kedaluwarsa</td></tr><tr><td style="text-align: center;"><img src="legend/SumurAirTanah_2_TidakBerizin2.png" /></td><td>Tidak Berizin</td></tr></table>', layer: layer_SumurAirTanah_2},
+            {label: 'Untuk buat webmap fix ini<br /><table><tr><td style="text-align: center;"><img src="legend/Untukbuatwebmapfixini_2_Berizin0.png" /></td><td>Berizin</td></tr><tr><td style="text-align: center;"><img src="legend/Untukbuatwebmapfixini_2_IzinKedaluwarsa1.png" /></td><td>Izin Kedaluwarsa</td></tr><tr><td style="text-align: center;"><img src="legend/Untukbuatwebmapfixini_2_TidakBerizin2.png" /></td><td>Tidak Berizin</td></tr></table>', layer: layer_Untukbuatwebmapfixini_2},
             {label: 'PROVINSI_RIAU<br /><table><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_BENGKALIS0.png" /></td><td>BENGKALIS</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_DUMAI1.png" /></td><td>DUMAI</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_INDRAGIRIHILIR2.png" /></td><td>INDRAGIRI HILIR</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_INDRAGIRIHULU3.png" /></td><td>INDRAGIRI HULU</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_KAMPAR4.png" /></td><td>KAMPAR</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_KEPULAUANMERANTI5.png" /></td><td>KEPULAUAN MERANTI</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_KUANTANSINGINGI6.png" /></td><td>KUANTAN SINGINGI</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_PEKANBARU7.png" /></td><td>PEKANBARU</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_PELALAWAN8.png" /></td><td>PELALAWAN</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_ROKANHILIR9.png" /></td><td>ROKAN HILIR</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_ROKANHULU10.png" /></td><td>ROKAN HULU</td></tr><tr><td style="text-align: center;"><img src="legend/PROVINSI_RIAU_1_SIAK11.png" /></td><td>SIAK</td></tr></table>', layer: layer_PROVINSI_RIAU_1},
             {label: "Google Terrain", layer: layer_GoogleTerrain_0},]
         var lay = L.control.layers.tree(null, overlaysTree,{
@@ -552,16 +551,6 @@
               addLabel(layer, i);
               i++;
         });
-        map.addControl(new L.Control.Search({
-            layer: layer_SumurAirTanah_2,
-            initial: false,
-            hideMarkerOnCollapse: true,
-            propertyName: 'Nama'}));
-        if (typeof url === 'undefined') {
-            document.getElementsByClassName('search-button')[0].className += ' fa fa-binoculars';
-        } else {
-            document.getElementsByClassName('search-button')[1].className += ' fa fa-binoculars';
-        }
         resetLabels([layer_PROVINSI_RIAU_1]);
         map.on("zoomend", function(){
             resetLabels([layer_PROVINSI_RIAU_1]);
@@ -575,4 +564,5 @@
         </script>        
     </body>
 </html>
+
 
